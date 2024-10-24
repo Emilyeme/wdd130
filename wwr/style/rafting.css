@@ -23,17 +23,22 @@ header {
     background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: space-between;
+}
+.navbar {
+    display: flex;
 }
 
 nav a {
-    color: white;
+    color: black;
     text-decoration: none;
     margin-left: 15px;
-}
+    display: grid;
+    place-items: right;
 
+}
 nav a:hover {
     text-decoration: underline; 
 }
@@ -52,7 +57,7 @@ nav a:hover {
 .hero h1 {
     position: absolute;
     top: 20%;
-    left: 5%;
+    left: 29%;
     color: white;
     font-size: 2.5em; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
@@ -61,22 +66,24 @@ nav a:hover {
 .hero article {
     position: absolute;
     bottom: 10%;
-    left: 5%;
+    left: 0%;
     background-color: rgba(255, 255, 255, 0.8); 
-    padding: 15px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .hero article img {
     float: right;
     margin-left: 10px; 
-    width: 50px; 
+    width: 140px; 
     height: auto;
 }
 
-h2 {
+.grec {
+    display: flex;
     color: var(--accent-color);
     margin-top: 20px;
+    justify-content:center;
 }
 
 p {
@@ -98,8 +105,48 @@ footer a {
 footer a img {
     width: 30px; 
     height: auto;
+    float: right;
+    margin: 4.5px;
 }
 
 footer p {
     margin: 5px 0;
 }
+
+.adventures{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+figure{
+    margin: 0 10px;
+    text-align: center;
+}
+
+figure img{
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+.emer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.lot{
+    grid-column: 1/2;
+    justify-content: flex-start;
+}
+.pop{
+    grid-column: 3/4;
+    justify-content: flex-end;
+}
+.dog{
+    grid-column: 2/3;
+    width: 380px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+
