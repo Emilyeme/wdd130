@@ -1,0 +1,146 @@
+:root {
+    --border-color: #ccc; /* Neutral border color */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #e7e2e2; /* Light background for the header */
+    color: #333; /* Dark text for readability */
+    padding: 20px;
+    text-align: center; /* Centered text */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Dark text color for links */
+}
+
+.hero {
+    position: relative;
+    overflow: hidden; 
+    text-align: center; /* Center the text in hero section */
+}
+
+.hero img {
+    width: 100%;
+    height: auto; 
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    color: #333; /* Dark text for contrast */
+}
+
+.newsletter, .cta {
+    text-align: center; /* Center text in sections */
+    padding: 20px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: #f4f4f4; /* Light background for grid items */
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 10px; /* Rounded corners */
+}
+
+footer {
+    background: #e7e2e2; /* Light footer background */
+    color: #333; /* Dark text in footer */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+.trip-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.trip {
+    background-color: #fff; /* White background for trip cards */
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.trip:hover {
+    transform: scale(1.05); 
+}
+
+.trip img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trip-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #e7e2e2; /* Light background for header */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .hero-text {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+}

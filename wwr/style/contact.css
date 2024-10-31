@@ -1,5 +1,5 @@
 :root{
-    ---primary-colour:#F2B5D4;
+    ---primary-colour:#db8db4;
     ---secondary-colour:#B2F7EF;
     ---background-colour:#eff7f6;
     ---text-colour:#5747d3;
@@ -14,33 +14,51 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text-color);
-    max-width: 1200px; 
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #ec9ed4;
+    max-width: 100%; 
 }
 
 header {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px 20px;
+    background-color: rgb(235, 145, 160);
+    color: rgb(33, 29, 29);
+    padding: 10px;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 2fr 3fr 4fr;
+    align-items: center;
+}
+header img {
+    padding: 30px;
+    align-items: center;
+}
+
+header h1{
+    text-shadow: #12f3a5;
+    padding: 15px;
     align-items: center;
 }
 .navbar {
     display: flex;
 }
-
+nav {
+    align-items: right;
+    justify-content: right;
+    padding-right: 40px;
+}
 nav a {
     color: black;
     text-decoration: none;
-    margin-left: 15px;
-    display: grid;
-    place-items: right;
+    padding: 10px 15px;
+    margin: 10px;
+    align-items: right;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 
 }
+
 nav a:hover {
-    text-decoration: underline; 
+    text-decoration: wavy; 
+    color: #cd077d;
+    background-color: #c4bbbb;
 }
 
 .hero {
@@ -88,7 +106,7 @@ nav a:hover {
 
 
 footer {
-    background-color: var(--footer-bg-color);
+    background-color: #d64dcd;
     text-align: center;
     padding: 15px 0;
 }
@@ -126,6 +144,7 @@ figure img{
 
 form {
     margin-top: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 label {
